@@ -1,12 +1,15 @@
 <?php
-define('AQI_OK', 0)
-define('AQI_PARAM_ERROR', 1)
-define('AQI_REPEAT_ACCOUNT_ID', 2)
-define('AQI_NO_CONTACT_TYPE', 3)
+define('AQI_OK', 0);
+define('AQI_DB_CONNECT_ERR', 1);
+define('AQI_DB_QUERY_ERR', 2);
+define('AQI_PARAM_ERR', 3);
+define('AQI_ACCOUNT_ID_REPEATED', 4);
+define('AQI_ACCOUNT_INFO_ERR', 5);
+define('AQI_NO_CONTACT_TYPE', 6);
 
 class Result {
-	public errorcode;
-	public description;
+	public $errcode;
+	public $desc;
 }
 
 function aqi_exit($dbc, $result) {
