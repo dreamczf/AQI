@@ -12,8 +12,4 @@ CREATE TABLE receiver_type
 	name VARCHAR(20) NOT NULL,
 	enabled TINYINT NOT NULL DEFAULT 1
 );
-INSERT INTO receiver_type (name, enabled) VALUES ("SMS", 1);
-INSERT INTO receiver_type (name, enabled) VALUES ("WECHAT", 1);
-INSERT INTO receiver_type (name, enabled) VALUES ("QQ", 1);
-INSERT INTO receiver_type (name, enabled) VALUES ("QQ GROUP", 1);
-INSERT INTO receiver_type (name, enabled) VALUES ("EMAIL", 1);
+INSERT INTO receiver_type (name, enabled) VALUES ("WECHAT GROUP", 1);
